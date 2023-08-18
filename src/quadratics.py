@@ -4,11 +4,14 @@ class Quadratics:
         self.b = coeff_x
         self.c = constant
     
+    def __repr__(self):
+        return f"Class {self.__class__.__name__} calcuates discriminant of a quadratic"
+
     def discriminant(self)-> float:
         """Calculate discriminant of quadratic
         
         Returns:
-        Discrimant : Float
+        Discriminant : Float
 
         """
         return self.b*self.b - 4*self.a*self.c
