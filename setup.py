@@ -6,7 +6,7 @@ with open("requirements.txt", "r") as fh:
     requirements = [line.strip() for line in fh]
 
 setuptools.setup(
-    name="is_number",
+    name="functions_package",
     version="1.0.0",
     author="H Hurchand",
     author_email="h.hurchand@gmail.com",
