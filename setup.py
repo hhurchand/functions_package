@@ -7,7 +7,7 @@ with open("requirements.txt", "r") as fh:
 
 setuptools.setup(
     name="functions_package",
-    version="1.0.0",
+    version="0.0.1",
     author="H Hurchand",
     author_email="h.hurchand@gmail.com",
     description="A python module to work with functions",
