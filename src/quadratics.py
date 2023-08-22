@@ -1,3 +1,14 @@
+"""This module provides a class for quadratic expressions and functions
+
+Classes:
+    Quadratics: Represents a quadratic, with coefficients
+
+Example usage:
+    # Create a quadratic object
+    quadratic = Quadratics(5,7,8)
+"""
+
+
 class Quadratics:
     """Calculate property indicators of a quadratic expression.
 
@@ -15,9 +26,9 @@ class Quadratics:
     discriminant: Returns the discriminant of the quadratic expression
     """
     def __init__(self, coeff_x2: float, coeff_x: float, constant: float):
-        self.a = coeff_x2
-        self.b = coeff_x
-        self.c = constant
+        self.coeff_x2 = coeff_x2
+        self.coeff_x = coeff_x
+        self.constant = constant
 
     def __repr__(self):
         return f"Class {self.__class__.__name__}\
@@ -30,4 +41,4 @@ class Quadratics:
         Discriminant (float): Calculates the discriminat of the quadratic
 
         """
-        return self.b*self.b - 4*self.a*self.c
+        return self.coeff_x2*self.coeff_x2 - 4*self.coeff_x2*self.constant
